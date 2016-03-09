@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listView;
     int[] img_resource = {R.drawable.m1, R.drawable.m2, R.drawable.m3, R.drawable.m4, R.drawable.m5};
 
-    String[] modulos = {"Modulo 1:", "Modulo 2:", "Modulo 3:", "Modulo 4:", "Modulo 5:"};
+    String[] modulos = {"Módulo 1:", "Módulo 2:", "Módulo 3:", "Módulo 4:", "Módulo 5:"};
 
     String[] nombreCapitulos = {"¿Qué es la Diabetes?", "Dieta y el Plato del Bien Comer",
                 "Complicaciones de la Diabetes", "La Diabetes y el Control de Emociones",

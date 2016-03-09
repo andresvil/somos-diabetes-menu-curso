@@ -22,7 +22,7 @@ public class MyAdapter extends ArrayAdapter {
         super(context, resource);
     }
 
-    public void add(Character object) {
+    public void add(Modulo object) {
         myList.add(object);
         super.add(object);
     }
