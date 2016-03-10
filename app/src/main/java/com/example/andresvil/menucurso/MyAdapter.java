@@ -3,6 +3,7 @@ package com.example.andresvil.menucurso;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,7 +68,12 @@ public class MyAdapter extends ArrayAdapter {
         }
 
         Modulo mod = (Modulo) getItem(position);
+
+        // Set background image and change its alpha
         row.setBackgroundResource(mod.getImg_rsc());
+        Drawable bg = row.getBackground();
+        bg.setAlpha(50);
+
         holder.CAPNUM.setText(mod.getModulo());
         holder.CAPNOMBRE.setText(mod.getNombre_capitulo());
 
