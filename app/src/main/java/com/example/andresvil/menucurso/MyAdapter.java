@@ -29,7 +29,6 @@ public class MyAdapter extends ArrayAdapter {
 
     static class ImgHolder
     {
-        ImageView IMG;
         TextView CAPNUM;
         TextView CAPNOMBRE;
     }
@@ -46,15 +45,13 @@ public class MyAdapter extends ArrayAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View row;
-        row = convertView;
+        View row = convertView;
         ImgHolder holder;
 
-        if(convertView == null) {
+        if(row == null) {
             LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(R.layout.row_layout, parent, false);
             holder = new ImgHolder();
-            holder.IMG = (ImageView) row.findViewById(R.id.icon_img);
             holder.CAPNUM = (TextView) row.findViewById(R.id.num_capitulo);
             holder.CAPNOMBRE = (TextView) row.findViewById(R.id.nombre_capitulo);
 
@@ -67,7 +64,7 @@ public class MyAdapter extends ArrayAdapter {
         }
 
         Modulo mod = (Modulo) getItem(position);
-        holder.IMG.setImageResource(mod.getImg_rsc());
+        row.setBackgroundResource(mod.getImg_rsc());
         holder.CAPNUM.setText(mod.getModulo());
         holder.CAPNOMBRE.setText(mod.getNombre_capitulo());
 

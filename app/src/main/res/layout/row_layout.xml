@@ -6,41 +6,28 @@
     android:layout_marginBottom="0dp"
     android:focusableInTouchMode="true">
 
-    <ImageView
-        android:id="@+id/icon_img"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_centerVertical="true"
-        android:padding="10dp"
-        android:scaleType="centerCrop"
-        android:cropToPadding="false"
-        android:adjustViewBounds="false"
-        android:src="@drawable/m1" />
-
     <TextView
         android:id="@+id/num_capitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
         android:text="Modulo 1"
-        android:layout_alignTop="@+id/icon_img"
-        android:layout_toRightOf="@+id/icon_img"
-        android:layout_toEndOf="@+id/icon_img" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:id="@+id/nombre_capitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="10sp"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
         android:text="Qué es la Diabetes?"
         android:layout_below="@+id/num_capitulo"
-        android:layout_alignLeft="@+id/num_capitulo"
-        android:layout_alignStart="@+id/num_capitulo"/>
+        android:layout_alignParentLeft="true"/>
 
 </RelativeLayout>
