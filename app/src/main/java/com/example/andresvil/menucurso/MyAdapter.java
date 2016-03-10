@@ -1,6 +1,8 @@
 package com.example.andresvil.menucurso;
 
 import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by andresvil on 3/9/16.
@@ -67,6 +70,12 @@ public class MyAdapter extends ArrayAdapter {
         row.setBackgroundResource(mod.getImg_rsc());
         holder.CAPNUM.setText(mod.getModulo());
         holder.CAPNOMBRE.setText(mod.getNombre_capitulo());
+
+        // Load font and set TextViews to that font
+        AssetManager am = getContext().getApplicationContext().getAssets();
+        Typeface myFont = Typeface.createFromAsset(am, String.format(Locale.US, "fonts/%s", "AvenirLTStd-Light_0.otf"));
+        holder.CAPNUM.setTypeface(myFont);
+        holder.CAPNOMBRE.setTypeface(myFont);
 
         return row;
     }
