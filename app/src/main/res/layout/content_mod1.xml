@@ -31,8 +31,8 @@
         android:layout_height="wrap_content"
         android:text="Descripción general del tema y aprovechar el espacio."
         android:id="@+id/descripcionTV"
-        android:paddingTop="15dp"
-        android:paddingBottom="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
         android:phoneNumber="false"
@@ -62,7 +62,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--ITEM 1-->
+            <!-- * * * * * ITEM 1 * * * * * -->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -76,9 +76,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/itemIcon1"
-                    android:src="@drawable/articulo"
+                    android:src="@drawable/check"
                     android:tint="#4D4495"
-                    android:layout_marginRight="15dp" />
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -103,6 +104,264 @@
                 android:background="#4D4495"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/itemLL1"/>
+
+            <!-- * * * * * ITEM 2 * * * * * -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemLL2"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemIcon2"
+                    android:src="@drawable/check"
+                    android:tint="#4D4495"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipos de diabetes"
+                    android:id="@+id/itemTV2"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemArrow2"
+                    android:src="@drawable/forward"
+                    android:tint="#4D4495" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4D4495"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/itemLL2"/>
+
+            <!-- * * * * * ITEM 3 * * * * * -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemLL3"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemIcon3"
+                    android:src="@drawable/check"
+                    android:tint="#4D4495"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prediabetes / Diagnóstico"
+                    android:id="@+id/itemTV3"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemArrow3"
+                    android:src="@drawable/forward"
+                    android:tint="#4D4495" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4D4495"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/itemLL3"/>
+
+            <!-- * * * * * ITEM 4 * * * * * -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemLL4"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemIcon4"
+                    android:src="@drawable/video"
+                    android:tint="#4D4495"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Niveles de glucosa"
+                    android:id="@+id/itemTV4"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemArrow4"
+                    android:src="@drawable/forward"
+                    android:tint="#4D4495" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4D4495"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/itemLL4"/>
+
+            <!-- * * * * * ITEM 5 * * * * * -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemLL5"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemIcon5"
+                    android:src="@drawable/audio"
+                    android:tint="#4D4495"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mitos y realidades de la diabetes"
+                    android:id="@+id/itemTV5"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemArrow5"
+                    android:src="@drawable/forward"
+                    android:tint="#4D4495" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4D4495"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/itemLL5"/>
+
+            <!-- * * * * * ITEM 6 * * * * * -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemLL6"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemIcon6"
+                    android:src="@drawable/articulo"
+                    android:tint="#4D4495"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Las metas del tratamiento"
+                    android:id="@+id/itemTV6"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemArrow6"
+                    android:src="@drawable/forward"
+                    android:tint="#4D4495" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4D4495"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/itemLL6"/>
+
+            <!-- * * * * * ITEM 7 * * * * * -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/itemLL7"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemIcon7"
+                    android:src="@drawable/audio"
+                    android:tint="#4D4495"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Factores de riesgo"
+                    android:id="@+id/itemTV7"
+                    android:layout_weight="2"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/itemArrow7"
+                    android:src="@drawable/forward"
+                    android:tint="#4D4495" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4D4495"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/itemLL7"/>
 
         </LinearLayout>
 
