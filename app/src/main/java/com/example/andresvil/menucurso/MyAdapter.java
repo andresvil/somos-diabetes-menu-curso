@@ -1,6 +1,7 @@
 package com.example.andresvil.menucurso;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +23,11 @@ import java.util.Locale;
 public class MyAdapter extends ArrayAdapter {
 
     private List myList = new ArrayList();
+    private Context context;
 
     public MyAdapter(Context context, int resource) {
         super(context, resource);
+        this.context = context;
     }
 
     public void add(Modulo object) {
@@ -48,7 +52,7 @@ public class MyAdapter extends ArrayAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         View row = convertView;
         ImgHolder holder;
 
@@ -67,13 +71,14 @@ public class MyAdapter extends ArrayAdapter {
             holder = (ImgHolder) row.getTag();
         }
 
-        Modulo mod = (Modulo) getItem(position);
+        final Modulo mod = (Modulo) getItem(position);
 
         // Set background image and change its alpha
         row.setBackgroundResource(mod.getImg_rsc());
         Drawable bg = row.getBackground();
         bg.setAlpha(50);
 
+        // Set textView texts
         holder.CAPNUM.setText(mod.getModulo());
         holder.CAPNOMBRE.setText(mod.getNombre_capitulo());
 
@@ -82,6 +87,25 @@ public class MyAdapter extends ArrayAdapter {
         Typeface myFont = Typeface.createFromAsset(am, String.format(Locale.US, "fonts/%s", "AvenirLTStd-Light_0.otf"));
         holder.CAPNUM.setTypeface(myFont);
         holder.CAPNOMBRE.setTypeface(myFont);
+
+        // Set OnClickListener
+        row.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                /*Class className = null;
+                try {
+                    className = Class.forName("Mod" + (position + 1) + ".class");
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+
+                Intent i = new Intent(getContext(), className);
+                getContext().startActivity(i);*/
+
+                Toast.makeText(getContext(), "Mod" + (position + 1) + ".class", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return row;
     }

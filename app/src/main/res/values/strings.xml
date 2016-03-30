@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Menu Curso</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_mod1">Modulo 1</string>
+    <string name="title_activity_mod2">Modulo 2</string>
 </resources>
